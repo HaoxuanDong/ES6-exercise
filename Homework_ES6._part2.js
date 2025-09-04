@@ -7,7 +7,7 @@ function fetchData(url, callback) {
     }, 2000); // simulate 2-second delay
 }
 
-// Example usage:
+
 fetchData("https://catfact.ninja/fact", (data) => {
     console.log("Callback received:", data);
 });
