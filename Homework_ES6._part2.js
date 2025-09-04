@@ -8,7 +8,7 @@ function fetchData(url, callback) {
 }
 
 
-fetchData("https://catfact.ninja/fact", (data) => {
+fetchData("https://jsonplaceholder.typicode.com/posts/1", (data) => {
     console.log("Callback received:", data);
 });
 
@@ -30,7 +30,7 @@ function fetchData(url) {
 }
 
 
-fetchData("https://catfact.ninja/fact")
+fetchData("https://jsonplaceholder.typicode.com/posts/1")
     .then((data) => {
         console.log("Promise resolved:", data);
     })
@@ -49,5 +49,5 @@ fetchData("https://catfact.ninja/fact")
 }
 
 
-loadData("https://catfact.ninja/fact");
+loadData("https://jsonplaceholder.typicode.com/posts/1");
 loadData(""); 
